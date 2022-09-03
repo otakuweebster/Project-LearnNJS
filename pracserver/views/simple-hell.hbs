@@ -1,0 +1,12 @@
+<h1>Welcome to the second level obscurity, {{name}}</h1>
+{{#if isgabe}}
+    <h2>Hey Gabe! Your current security level is: {{securitylevel}}</h2>
+    <h3>Here's some recent users that tried to login to our system</h3>
+    <ul>
+        {{#each userslog}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+{{else}}
+    <h2>Hey there stranger! Looks like you haven't authenticated AND authorized properly. Here's a guest mode for now.<h2>
+{{/if}}
